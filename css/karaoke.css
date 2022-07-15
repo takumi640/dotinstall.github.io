@@ -1,0 +1,155 @@
+/* common */
+
+body{
+  margin: 0;
+  width: 90%;
+  padding-left: 5%;
+  background: #F4F5F7;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul a{
+  color: black;
+  font-size: 12px;
+  transition: opacity .3s;
+}
+
+a:hover{
+  opacity: .3;
+}
+
+p{
+  margin: 0;
+}
+
+h2{
+  margin: 0;
+}
+
+img{
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+
+header ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+header li{
+  padding-right: 10px;
+}
+
+/* hero */
+
+.hero p{
+  text-align: center;
+  font-size: 12px;
+}
+
+.hero {
+  display: inline-block;
+  position: relative;
+}
+
+.hero img:nth-child(2) {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* concept */
+
+.concept h1{
+  text-align: center;
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+.concept p{
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 12px;
+}
+
+.concept img{
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* set */
+
+.set{
+  background-image: url(../img/karaoke2000.jpg);
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 700px;
+  margin-bottom: 70px;
+}
+
+.set img{
+  margin-left: 25%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.set2{
+  background-image: url(../img/karaoke3000.jpg);
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 700px;
+}
+
+.set2 img{
+  margin-left: 25%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* info */
+.info{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.info p{
+  margin-top: 24px;
+  font-size: 12px;
+}
+
+.info p + p{
+  font-size: 10px;
+  margin-top: 26px;
+}
+
+@media (min-width: 600px) {
+
+  body{
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  .set-menu{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .set-menu .set,.set2{
+    width: 330px;
+    height: 400px;
+  }
+}
